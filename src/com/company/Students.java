@@ -3,12 +3,12 @@ package com.company;
 public class Students {
     private String name;
     private int age;
-    private int score;
+    private double averageScore;
 
-    public Students(String name, int age, int score) {
+    public Students(String name, int age, double averageScore) {
         this.name = name;
         this.age = age;
-        this.score = score;
+        this.averageScore = averageScore;
     }
 
     public String getName() {
@@ -19,8 +19,8 @@ public class Students {
         return age;
     }
 
-    public int getScore() {
-        return score;
+    public double averageScore() {
+        return averageScore;
     }
 
     public void setName(String name) {
@@ -31,8 +31,8 @@ public class Students {
         this.age = age;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setAverageScore(double averageScore) {
+        this.averageScore = averageScore;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Students {
         return "Students{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", score=" + score +
+                ", средний бал=" + averageScore +
                 '}';
     }
 }
