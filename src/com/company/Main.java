@@ -31,7 +31,7 @@ public class Main {
             double sumScore = 0;
 
             for (int j = 0; j < teachers.size(); j++) {
-                int score = random.nextInt(5) + 1;
+                int score = random.nextInt(10) + 1;
                 sumScore = sumScore + score;
 
             }
